@@ -27,13 +27,13 @@
 
 // contoh menghitung total belanja
 const keranjangBelanja = [
-    {nama: "Laptop", harga: 12000000, jumlah: 1},
-    {nama: "Mouse", harga: 100000, jumlah: 2},
-    {nama: "Keyboard", harga: 200000, jumlah: 1},
-]
+  { nama: "Laptop", harga: 12000000, jumlah: 1 },
+  { nama: "Mouse", harga: 100000, jumlah: 2 },
+  { nama: "Keyboard", harga: 200000, jumlah: 1 },
+];
 
-const totalBelanja = keranjangBelanja.reduce(function(acc, curr) {
-    return acc + (curr.harga * curr.jumlah);
+const totalBelanja = keranjangBelanja.reduce(function (acc, curr) {
+  return acc + curr.harga * curr.jumlah;
 }, 0);
 
 console.log(totalBelanja);
